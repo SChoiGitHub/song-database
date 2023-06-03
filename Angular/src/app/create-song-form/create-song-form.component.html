@@ -1,0 +1,11 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <button (click)="createNewTag()">Create New Tag</button>
+  <button type="submit">Submit</button>
+
+  <input type="text" formControlName="Name">
+  <input type="number" formControlName="Length">
+  <div *ngFor="let control of formGroup.controls.Tags.controls; let i = index">
+    <input type="text" [formControl]=control />
+  </div>
+
+</form>

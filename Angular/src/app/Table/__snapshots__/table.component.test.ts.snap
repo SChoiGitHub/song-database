@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableComponent should list songs 1`] = `
+<div
+  id="root1"
+>
+  <h5>
+     Music List
+
+  </h5>
+  <div>
+    <ul>
+      <li>
+         The song "Reborn Again" is 209 seconds long. 
+        <a>
+          Edit
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div>
+     No songs found.
+
+  </div>
+</div>
+`;
+
+exports[`TableComponent should say no music added without songs 1`] = `
+<div
+  id="root0"
+>
+  <h5>
+     Music List
+
+  </h5>
+  
+  <div>
+     No songs found.
+
+  </div>
+</div>
+`;

@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBarComponent should be active for the active link 1`] = `
+<button
+  aria-controls="ngb-nav-5-panel"
+  aria-disabled="false"
+  aria-label="Navigate to Add Song"
+  aria-selected="true"
+  class="nav-link active"
+  ngbnavlink=""
+  role="tab"
+  type="button"
+>
+   Add Song 
+</button>
+`;
+
+exports[`NavigationBarComponent should match snapshot 1`] = `
+<div
+  id="root0"
+>
+  <ul
+    class="nav-pills nav"
+    ngbnav=""
+    role="tablist"
+  >
+    <li
+      class="nav-item"
+      ngbnavitem=""
+      role="presentation"
+    >
+      <a
+        aria-controls="ngb-nav-0-panel"
+        aria-disabled="true"
+        aria-selected="true"
+        class="nav-link active disabled"
+        href=""
+        ngbnavlink=""
+        role="tab"
+        tabindex="-1"
+      >
+        Song Database
+      </a>
+    </li>
+    <li>
+      <app-navigationitem
+        label="View Songs"
+        link="/"
+      >
+        <li
+          class="nav-item"
+          ngbnavitem=""
+          role="presentation"
+        >
+          <button
+            aria-disabled="false"
+            aria-label="Navigate to View Songs"
+            aria-selected="false"
+            class="nav-link"
+            ngbnavlink=""
+            role="tab"
+            type="button"
+          >
+             View Songs 
+          </button>
+        </li>
+      </app-navigationitem>
+      <app-navigationitem
+        label="Add Song"
+        link="/addSong"
+      >
+        <li
+          class="nav-item"
+          ngbnavitem=""
+          role="presentation"
+        >
+          <button
+            aria-disabled="false"
+            aria-label="Navigate to Add Song"
+            aria-selected="false"
+            class="nav-link"
+            ngbnavlink=""
+            role="tab"
+            type="button"
+          >
+             Add Song 
+          </button>
+        </li>
+      </app-navigationitem>
+    </li>
+  </ul>
+</div>
+`;

@@ -1,0 +1,24 @@
+<h5>
+  Music List
+</h5>
+
+<ng-container *ngIf="songs.length > 0">
+  <div ngbAccordion class="songTable">
+    <ng-container *ngFor="let song of songs;">
+      <div ngbAccordionItem>
+        <h2 ngbAccordionHeader>
+          <button ngbAccordionButton>{{song.name}}</button>
+        </h2>
+        <div ngbAccordionCollapse>
+          <div ngbAccordionBody>
+            <a [routerLink]="['/editSong', song.songId]">Edit</a>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</ng-container>
+
+<div *ngIf="songs.length === 0">
+  No songs found.
+</div>

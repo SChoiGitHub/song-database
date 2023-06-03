@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  spa:
+    build: ./Angular
+    ports:
+      - "8000:5000"
+  api:
+    image: "redis:alpine"

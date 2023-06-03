@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationitemComponent can become active 1`] = `
+<div
+  id="root1"
+>
+  <li
+    ngbnavitem=""
+  >
+    <button
+      aria-label="Navigate to Add Song"
+      ngbnavlink=""
+      tabindex="0"
+    >
+       Add Song 
+    </button>
+  </li>
+</div>
+`;
+
+exports[`NavigationitemComponent should match snapshot 1`] = `
+<div
+  id="root0"
+>
+  <li
+    ngbnavitem=""
+  >
+    <button
+      aria-label="Navigate to Add Song"
+      ngbnavlink=""
+      tabindex="0"
+    >
+       Add Song 
+    </button>
+  </li>
+</div>
+`;
