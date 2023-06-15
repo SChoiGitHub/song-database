@@ -1,93 +1,198 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavigationBarComponent should be active for the active link 1`] = `
-<button
-  aria-controls="ngb-nav-5-panel"
-  aria-disabled="false"
-  aria-label="Navigate to Add Song"
-  aria-selected="true"
-  class="nav-link active"
-  ngbnavlink=""
-  role="tab"
-  type="button"
+<div
+  id="root1"
 >
-   Add Song 
-</button>
+  <div
+    class="flexItem"
+  >
+     Song Database
+
+  </div>
+  <div
+    class="flexItem"
+  >
+    <ul
+      class="nav-pills nav"
+      ngbnav=""
+      role="tablist"
+    >
+      <li
+        class="nav-item"
+        label="View Songs"
+        link="/"
+        navigationitem=""
+        ngbnavitem=""
+        role="presentation"
+      >
+        <button
+          aria-disabled="false"
+          aria-label="Navigate to View Songs"
+          aria-selected="false"
+          class="nav-link"
+          ngbnavlink=""
+          role="tab"
+          type="button"
+        >
+           View Songs
+
+        </button>
+      </li>
+      <li
+        class="nav-item"
+        label="Add Song"
+        link="/addSong"
+        navigationitem=""
+        ngbnavitem=""
+        role="presentation"
+      >
+        <button
+          aria-controls="ngb-nav-3-panel"
+          aria-disabled="false"
+          aria-label="Navigate to Add Song"
+          aria-selected="true"
+          class="nav-link active"
+          ngbnavlink=""
+          role="tab"
+          type="button"
+        >
+           Add Song
+
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
 `;
 
-exports[`NavigationBarComponent should match snapshot 1`] = `
+exports[`NavigationBarComponent should default active to nothing 1`] = `
 <div
   id="root0"
 >
-  <ul
-    class="nav-pills nav"
-    ngbnav=""
-    role="tablist"
+  <div
+    class="flexItem"
   >
-    <li
-      class="nav-item"
-      ngbnavitem=""
-      role="presentation"
+     Song Database
+
+  </div>
+  <div
+    class="flexItem"
+  >
+    <ul
+      class="nav-pills nav"
+      ngbnav=""
+      role="tablist"
     >
-      <a
-        aria-controls="ngb-nav-0-panel"
-        aria-disabled="true"
-        aria-selected="true"
-        class="nav-link active disabled"
-        href=""
-        ngbnavlink=""
-        role="tab"
-        tabindex="-1"
-      >
-        Song Database
-      </a>
-    </li>
-    <li>
-      <app-navigationitem
+      <li
+        class="nav-item"
         label="View Songs"
         link="/"
+        navigationitem=""
+        ngbnavitem=""
+        role="presentation"
       >
-        <li
-          class="nav-item"
-          ngbnavitem=""
-          role="presentation"
+        <button
+          aria-disabled="false"
+          aria-label="Navigate to View Songs"
+          aria-selected="false"
+          class="nav-link"
+          ngbnavlink=""
+          role="tab"
+          type="button"
         >
-          <button
-            aria-disabled="false"
-            aria-label="Navigate to View Songs"
-            aria-selected="false"
-            class="nav-link"
-            ngbnavlink=""
-            role="tab"
-            type="button"
-          >
-             View Songs 
-          </button>
-        </li>
-      </app-navigationitem>
-      <app-navigationitem
+           View Songs
+
+        </button>
+      </li>
+      <li
+        class="nav-item"
         label="Add Song"
         link="/addSong"
+        navigationitem=""
+        ngbnavitem=""
+        role="presentation"
       >
-        <li
-          class="nav-item"
-          ngbnavitem=""
-          role="presentation"
+        <button
+          aria-disabled="false"
+          aria-label="Navigate to Add Song"
+          aria-selected="false"
+          class="nav-link"
+          ngbnavlink=""
+          role="tab"
+          type="button"
         >
-          <button
-            aria-disabled="false"
-            aria-label="Navigate to Add Song"
-            aria-selected="false"
-            class="nav-link"
-            ngbnavlink=""
-            role="tab"
-            type="button"
-          >
-             Add Song 
-          </button>
-        </li>
-      </app-navigationitem>
-    </li>
-  </ul>
+           Add Song
+
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`NavigationBarComponent should use the last clicked link 1`] = `
+<div
+  id="root2"
+>
+  <div
+    class="flexItem"
+  >
+     Song Database
+
+  </div>
+  <div
+    class="flexItem"
+  >
+    <ul
+      class="nav-pills nav"
+      ngbnav=""
+      role="tablist"
+    >
+      <li
+        class="nav-item"
+        label="View Songs"
+        link="/"
+        navigationitem=""
+        ngbnavitem=""
+        role="presentation"
+      >
+        <button
+          aria-controls="ngb-nav-4-panel"
+          aria-disabled="false"
+          aria-label="Navigate to View Songs"
+          aria-selected="true"
+          class="nav-link active"
+          ngbnavlink=""
+          role="tab"
+          type="button"
+        >
+           View Songs
+
+        </button>
+      </li>
+      <li
+        class="nav-item"
+        label="Add Song"
+        link="/addSong"
+        navigationitem=""
+        ngbnavitem=""
+        role="presentation"
+      >
+        <button
+          aria-disabled="false"
+          aria-label="Navigate to Add Song"
+          aria-selected="false"
+          class="nav-link"
+          ngbnavlink=""
+          role="tab"
+          type="button"
+        >
+           Add Song
+
+        </button>
+      </li>
+    </ul>
+  </div>
 </div>
 `;

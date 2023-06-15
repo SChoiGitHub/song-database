@@ -1,0 +1,9 @@
+<h6>Tags</h6>
+<ul *ngFor="let tag of tags;">
+    <div *ngIf="tag.description.length > 0">
+        <a [routerLink]="['editTag',tag.tagId]">{{tag.name}}</a>: {{tag.description}}
+    </div>
+    <div *ngIf="tag.description.length === 0">
+        <a [routerLink]="['editTag',tag.tagId]">{{tag.name}}</a>
+    </div>
+</ul>

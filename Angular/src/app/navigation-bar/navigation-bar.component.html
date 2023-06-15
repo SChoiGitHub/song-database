@@ -1,7 +1,9 @@
-<ul ngbNav #nav="ngbNav" class="nav-pills">
-  <li ngbNavItem [disabled]="true" class="">
-    <a ngbNavLink>Song Database</a>
-  <li>
-  <app-navigationitem link="/" label="View Songs"></app-navigationitem>
-  <app-navigationitem link="/addSong" label="Add Song"></app-navigationitem>
-</ul>
+<div class="flexItem">
+  Song Database
+</div>
+<div class="flexItem">
+  <ul ngbNav #nav="ngbNav" class="nav-pills">
+    <li ngbNavItem navigationitem link="/" label="View Songs"></li>
+    <li ngbNavItem navigationitem link="/addSong" label="Add Song"></li>
+  </ul>
+</div>

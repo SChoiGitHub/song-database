@@ -1,11 +1,22 @@
 <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-  <button (click)="createNewTag()">Create New Tag</button>
-  <button type="submit">Submit</button>
-
-  <input type="text" formControlName="Name">
-  <input type="number" formControlName="Length">
-  <div *ngFor="let control of formGroup.controls.Tags.controls; let i = index">
-    <input type="text" [formControl]=control />
+  <div class="inputContainer">
+    <label>Name</label>
+    <input type="text" formControlName="Name">
   </div>
 
+  <div class="inputContainer">
+    <label>Length</label>
+    <input type="number" formControlName="Length">
+  </div>
+
+  <button (click)="createNewTag()">Create New Tag</button>
+  <div *ngFor="let control of formGroup.controls.Tags.controls; let i = index">
+    <div class="inputContainer">
+      <label>Tag #{{i+1}}:</label>
+      <input type="text" [formControl]=control />
+      <button *ngIf="canRemoveTags" (click)="deleteTag(i)">Remove</button>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="this.isFetching">Submit</button>
 </form>

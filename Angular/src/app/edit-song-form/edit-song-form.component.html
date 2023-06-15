@@ -1,6 +1,7 @@
-<p>edit-song-form works!</p>
+<p>Edit Song</p>
 
-<p>My id is {{this.song.songId}}</p>
-<p>My name is {{this.song.name}}</p>
+<div *ngIf="this.song.isEditing()">
+    <create-song-form [song]="this.song"/>
+</div>
 
 <a routerLink="/">Go Back</a>

@@ -11,7 +11,16 @@
         </h2>
         <div ngbAccordionCollapse>
           <div ngbAccordionBody>
-            <a [routerLink]="['/editSong', song.songId]">Edit</a>
+            <h6>Actions</h6>
+            <ul>
+              <li>
+                <a [routerLink]="['/editSong', song.songId]">Edit</a>
+              </li>
+              <li>
+                <a (click)="deleteSong(song.songId)">Delete</a>
+              </li>
+            </ul>
+            <app-tags-list [tags]="song.tags"></app-tags-list>
           </div>
         </div>
       </div>

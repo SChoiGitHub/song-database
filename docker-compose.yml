@@ -3,6 +3,8 @@ services:
   spa:
     build: ./Angular
     ports:
-      - "8000:5000"
+      - 4321:80
   api:
-    image: "redis:alpine"
+    build: ./DotNet/Api
+    ports:
+      - 5001:80

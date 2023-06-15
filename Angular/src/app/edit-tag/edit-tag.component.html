@@ -1,0 +1,13 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <div class="inputContainer">
+      <label>Name</label>
+      <input type="text" formControlName="name">
+    </div>
+  
+    <div class="inputContainer">
+      <label>Description</label>
+      <input formControlName="description">
+    </div>
+  
+    <button type="submit" [disabled]="this.isFetching">Submit</button>
+  </form>

@@ -14,4 +14,8 @@ export class TableComponent {
     this.songs = [];
     this.musicService.songs.subscribe(s => this.songs = s);
   }
+
+  deleteSong(songId: number) {
+    this.musicService.deleteSong(songId);
+  }
 }

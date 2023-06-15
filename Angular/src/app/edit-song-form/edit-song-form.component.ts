@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
-import { of, switchMap } from 'rxjs';
-import { MusicService } from '../Service/music.service';
+import { ActivatedRoute } from '@angular/router';
 import { Song } from '../BusinessObject/song';
+import { MusicService } from '../Service/music.service';
 
 @Component({
   selector: 'app-edit-song-form',
@@ -20,8 +19,10 @@ export class EditSongFormComponent {
   }
 
   ngOnInit() {
-    this.route.paramMap.pipe(switchMap((params: ParamMap) => {
-      return of(parseInt(params.get('id') ?? '0'));
-    })).subscribe(x => this.song = this.musicService.getSong(x)); //TODO: Prefer observable
+    this.route.paramMap.subscribe(params => {
+      const id = +(params.get('id') ?? -1);
+
+      this.musicService.getSong(id).subscribe(s => this.song = s);
+    })
   }
 }

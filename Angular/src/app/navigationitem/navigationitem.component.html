@@ -1,6 +1,3 @@
-<li ngbNavItem>
-  <button [routerLink]="link" ngbNavLink [attr.aria-label]="'Navigate to ' + label" (onClick)="setToActive()"
-    [ngClass]="class">
-    {{label}}
-  </button>
-</li>
+<button [routerLink]="link" ngbNavLink [attr.aria-label]="'Navigate to ' + label" [ngClass]="class">
+  {{label}}
+</button>

@@ -21,4 +21,19 @@ public class MusicGatewayStub : IMusicGateway
     {
         throw new NotImplementedException();
     }
+
+    public bool DeleteSong(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool EditSong(Song songToEdit)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool EditTag(Tag tag)
+    {
+        throw new NotImplementedException();
+    }
 }

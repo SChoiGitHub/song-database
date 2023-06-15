@@ -8,22 +8,49 @@ exports[`TableComponent should list songs 1`] = `
      Music List
 
   </h5>
-  <div>
-    <ul>
-      <li>
-         The song "Reborn Again" is 209 seconds long. 
-        <a>
-          Edit
-        </a>
-      </li>
-      
-    </ul>
+  <div
+    class="songTable"
+    ngbaccordion=""
+  >
+    <div
+      ngbaccordionitem=""
+    >
+      <h2
+        ngbaccordionheader=""
+      >
+        <button
+          ngbaccordionbutton=""
+        >
+          Reborn Again
+        </button>
+      </h2>
+      <div
+        ngbaccordioncollapse=""
+      >
+        <div
+          ngbaccordionbody=""
+        >
+          <ul>
+            <li>
+              <a>
+                Edit
+              </a>
+            </li>
+            <li>
+              <a>
+                Delete
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    
   </div>
   
-  <div>
-     No songs found.
-
-  </div>
+  
+  
 </div>
 `;
 
@@ -36,9 +63,6 @@ exports[`TableComponent should say no music added without songs 1`] = `
 
   </h5>
   
-  <div>
-     No songs found.
-
-  </div>
+  
 </div>
 `;

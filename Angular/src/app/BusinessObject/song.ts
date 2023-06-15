@@ -19,12 +19,20 @@ export class Song {
       songId = -1,
       name = '',
       length = 0,
-      tags = [],
+      tags = [{ name: '' }],
     } = rawData;
 
     this.songId = songId;
     this.name = name;
     this.length = length;
     this.tags = tags.map(t => new Tag(t));
+  }
+
+  isAdding() {
+    return this.songId === -1;
+  }
+
+  isEditing() {
+    return this.songId !== -1;
   }
 }

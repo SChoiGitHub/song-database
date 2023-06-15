@@ -11,6 +11,9 @@ import { IndexComponent } from './index/index.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavigationitemComponent } from './navigationitem/navigationitem.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { environment } from 'src/environments/environment';
+import { EditTagComponent } from './edit-tag/edit-tag.component';
+import { TagsListComponent } from './tags-list/tags-list.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,8 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     IndexComponent,
     NavigationitemComponent,
     NavigationBarComponent,
+    EditTagComponent,
+    TagsListComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     ReactiveFormsModule,
     NgbModule,
   ],
-  providers: [],
+  providers: [{ provide: 'API_BASE_URL', useValue: environment.apiBaseUrl }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

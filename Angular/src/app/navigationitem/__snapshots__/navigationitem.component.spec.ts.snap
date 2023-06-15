@@ -4,17 +4,42 @@ exports[`NavigationitemComponent can become active 1`] = `
 <div
   id="root1"
 >
-  <li
-    ngbnavitem=""
+  <button
+    aria-label="Navigate to Add Song"
+    ngbnavlink=""
   >
-    <button
-      aria-label="Navigate to Add Song"
-      ngbnavlink=""
-      tabindex="0"
-    >
-       Add Song 
-    </button>
-  </li>
+     Add Song
+
+  </button>
+</div>
+`;
+
+exports[`NavigationitemComponent can become active based on the URL 1`] = `
+<div
+  id="root2"
+>
+  <button
+    aria-label="Navigate to Add Song"
+    ngbnavlink=""
+  >
+     Add Song
+
+  </button>
+</div>
+`;
+
+exports[`NavigationitemComponent can become active based on the URL 2`] = `
+<div
+  id="root2"
+>
+  <button
+    aria-label="Navigate to Add Song"
+    class="active"
+    ngbnavlink=""
+  >
+     Add Song
+
+  </button>
 </div>
 `;
 
@@ -22,16 +47,12 @@ exports[`NavigationitemComponent should match snapshot 1`] = `
 <div
   id="root0"
 >
-  <li
-    ngbnavitem=""
+  <button
+    aria-label="Navigate to Add Song"
+    ngbnavlink=""
   >
-    <button
-      aria-label="Navigate to Add Song"
-      ngbnavlink=""
-      tabindex="0"
-    >
-       Add Song 
-    </button>
-  </li>
+     Add Song
+
+  </button>
 </div>
 `;

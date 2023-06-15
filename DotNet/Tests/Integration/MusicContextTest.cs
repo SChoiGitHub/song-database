@@ -45,4 +45,26 @@ public class MusicContextTest
             Assert.Equal(song, t.Song);
         });
     }
+
+    [Fact]
+    public void SaveChanges_invalidObject_shouldFail()
+    {
+        //Arrange
+        var song = new Song
+        {
+            Name = "",
+            Length = 0,
+            Tags = new List<Tag>{
+                new Tag{ Name = "Nothing" },
+            }
+        };
+
+        //Assert
+        Assert.Throws<Exception>(() =>
+        {
+            //Act
+            this.context.Songs.Add(song);
+            this.context.SaveChanges();
+        });
+    }
 }

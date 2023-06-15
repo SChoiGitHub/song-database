@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { buildTestBed } from '../TestingModule';
 import { EditSongFormComponent } from './edit-song-form.component';
 
 describe('EditSongFormComponent', () => {
@@ -7,7 +7,7 @@ describe('EditSongFormComponent', () => {
   let fixture: ComponentFixture<EditSongFormComponent>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
+    buildTestBed().configureTestingModule({
       declarations: [EditSongFormComponent]
     });
     fixture = TestBed.createComponent(EditSongFormComponent);
